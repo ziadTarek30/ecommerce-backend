@@ -1,121 +1,72 @@
-# 🛒 Ecommerce Frontend
+## 🔌 API Endpoints
 
-A modern e-commerce frontend application built with **Angular 21**. This project delivers a responsive shopping experience with product browsing, cart management, and user authentication.
-
----
-
-## 🚀 Tech Stack
-
-| Technology | Version |
-|---|---|
-| Angular | ^21.1.0 |
-| TypeScript | ~5.9.2 |
-| RxJS | ~7.8.0 |
-| jwt-decode | ^4.0.0 |
-| Vitest | ^4.0.8 |
-
----
-
-## 📦 Features
-
-- 🔐 **User Authentication** — JWT-based login and registration
-- 🛍️ **Product Browsing** — View and search through the product catalog
-- 🛒 **Shopping Cart** — Add, remove, and update cart items
-- 📦 **Order Management** — Checkout flow and order handling
-- 📱 **Responsive Design** — Optimized for all screen sizes
-
----
-
-## 🛠️ Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v18 or higher)
-- [npm](https://www.npmjs.com/) v11.6.2+
-- [Angular CLI](https://angular.io/cli) v21
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/ziadTarek30/ecommerce-frontend.git
-   cd ecommerce-frontend
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   npm start
-   ```
-
-4. Open your browser and navigate to `http://localhost:4200/`
-
-> The application will automatically reload when you make changes to source files.
-
----
-
-## 📁 Project Structure
-
-```
-ecommerce-frontend/
-├── public/               # Static assets
-├── src/
-│   ├── app/              # Application components, services, and routing
-│   └── ...
-├── angular.json          # Angular CLI configuration
-├── tsconfig.json         # TypeScript configuration
-└── package.json          # Project dependencies and scripts
-```
-
----
-
-## 🧪 Running Tests
-
-```bash
-npm test
-```
-
-Tests are powered by [Vitest](https://vitest.dev/).
-
----
-
-## 🏗️ Build
-
-To build the project for production:
-
-```bash
-npm run build
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
----
-
-## 🔄 Available Scripts
-
-| Command | Description |
-|---|---|
-| `npm start` | Start the development server |
-| `npm run build` | Build the project for production |
-| `npm run watch` | Build in watch mode (development) |
-| `npm test` | Run unit tests |
-
----
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :--- |
+| POST | `/api/auth/register` | Register a new user | No |
+| POST | `/api/auth/login` | Login and get token | No |
+| GET | `/api/products` | Get all products | No |
+| POST | `/api/products` | Create a product | Yes (Admin) |
+| POST | `/api/cart` | Add item to cart | Yes |
 
 ## 🤝 Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes.
+4. Push to the branch.
+5. Open a Pull Request.
 
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Open a pull request
+***
 
----
+# E-commerce Backend API
 
-## 📄 License
+A robust and scalable backend system for an E-commerce platform, built with [Insert Primary Language/Framework, e.g., Node.js/Express, Python/Django, etc.]. This project handles core e-commerce functionalities including user authentication, product management, shopping carts, and order processing.
 
-This project is private and not licensed for public distribution.
+## 🚀 Features
+
+*   **User Authentication:** Secure JWT-based authentication and authorization.
+*   **Product Management:** CRUD operations for products, categories, and inventory.
+*   **Shopping Cart:** Persistent cart functionality for authenticated users.
+*   **Order Processing:** Checkout flow, order history, and status tracking.
+*   **Secure API:** Middleware for validation and error handling.
+*   **Database:** Integrated with [Insert Database, e.g., MongoDB/PostgreSQL] for reliable data storage.
+
+## 🛠 Tech Stack
+
+*   **Runtime/Framework:** [e.g., Node.js, Express.js]
+*   **Database:** [e.g., MongoDB with Mongoose]
+*   **Authentication:** [e.g., JSON Web Tokens (JWT)]
+*   **API Documentation:** [e.g., Swagger/Postman]
+*   **Environment Variables:** [e.g., Dotenv]
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+*   [e.g., Node.js (v18+)]
+*   [e.g., npm or yarn]
+*   [e.g., MongoDB or Docker]
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/ziadTarek30/ecommerce-backend.git](https://github.com/ziadTarek30/ecommerce-backend.git)
+   cd ecommerce-backend
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+
+3. **Configure environment variables:**
+   Create a .env file in the root directory and add the following:
+   ```code
+   PORT=5000
+   MONGO_URI=your_database_connection_string
+   JWT_SECRET=your_secret_key
+
+4. **Start the server:**
+   ```bash
+   # Development mode
+   npm run dev
+   # Production mode
+   npm start

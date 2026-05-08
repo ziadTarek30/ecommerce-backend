@@ -1,17 +1,17 @@
 ## 🔌 API Endpoints
 
-| Method | Endpoint | Description | Auth Required |
-| :--- | :--- | :--- | :--- |
-| POST | `/api/auth/register` | Register a new user | No |
-| POST | `/api/auth/login` | Login and get token | No |
-| GET | `/api/products` | Get all products | No |
-| POST | `/api/products` | Create a product | Yes (Admin) |
-| POST | `/api/cart` | Add item to cart | Yes |
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| POST | `/api/auth/register` | Register a new user |
+| POST | `/api/auth/login` | Login and get token |
+| GET | `/api/products` | Get all products |
+| POST | `/api/products` | Create a product |
+| POST | `/api/cart` | Add item to cart |
 
 ## 🤝 Contributing
 Contributions are welcome! Please follow these steps:
 1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`).
+2. Create a feature branch.
 3. Commit your changes.
 4. Push to the branch.
 5. Open a Pull Request.
@@ -20,7 +20,7 @@ Contributions are welcome! Please follow these steps:
 
 # E-commerce Backend API
 
-A robust and scalable backend system for an E-commerce platform, built with [Insert Primary Language/Framework, e.g., Node.js/Express, Python/Django, etc.]. This project handles core e-commerce functionalities including user authentication, product management, shopping carts, and order processing.
+A robust and scalable backend system for an E-commerce platform, built with Node.js/Express. This project handles core e-commerce functionalities including user authentication, product management, shopping carts, and order processing.
 
 ## 🚀 Features
 
@@ -29,22 +29,22 @@ A robust and scalable backend system for an E-commerce platform, built with [Ins
 *   **Shopping Cart:** Persistent cart functionality for authenticated users.
 *   **Order Processing:** Checkout flow, order history, and status tracking.
 *   **Secure API:** Middleware for validation and error handling.
-*   **Database:** Integrated with [Insert Database, e.g., MongoDB/PostgreSQL] for reliable data storage.
+*   **Database:** Integrated with MongoDB for reliable data storage.
 
 ## 🛠 Tech Stack
 
-*   **Runtime/Framework:** [e.g., Node.js, Express.js]
-*   **Database:** [e.g., MongoDB with Mongoose]
-*   **Authentication:** [e.g., JSON Web Tokens (JWT)]
-*   **API Documentation:** [e.g., Swagger/Postman]
-*   **Environment Variables:** [e.g., Dotenv]
+*   **Runtime/Framework:** Node.js, Express.js
+*   **Database:** MongoDB with Mongoose
+*   **Authentication:** JSON Web Tokens (JWT)
+*   **API Documentation:** Postman
+*   **Environment Variables:** Dotenv
 
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
-*   [e.g., Node.js (v18+)]
-*   [e.g., npm or yarn]
-*   [e.g., MongoDB or Docker]
+*   Node.js
+*   npm
+*   MongoDB
 
 ## ⚙️ Installation & Setup
 
